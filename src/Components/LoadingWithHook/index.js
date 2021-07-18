@@ -12,7 +12,7 @@ const LoadingWithHook = (props) => {
     const [backgroundColor, setBackgroundColor] = useState("red");
 
     useEffect(() => {
-        console.log("useEffect ishladi");
+        console.log("useEffect ishladi!");
 
         if (step >= 30 && step < 70) setBackgroundColor("yellow");
         else if (step >= 70) setBackgroundColor("green");
