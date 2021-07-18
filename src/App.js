@@ -4,13 +4,22 @@ import './App.css';
 import Clock from './Components/Clock';
 import Loading from './Components/Loading';
 import LoadingWithHook from './Components/LoadingWithHook';
+import Pomodoro from './Components/Pomodoro';
 
 function App() {
+
+
+
+
   return (
     <div className="App text-center">
       {/* <Clock /> */}
       {/* <Loading /> */}
-      <LoadingWithHook />
+
+      {/* Hook components */}
+      {/* <LoadingWithHook  /> */}
+      <Pomodoro workTime={25} restTime={5} />
+      <Pomodoro workTime={30} restTime={10} />
     </div>
   );
 }
